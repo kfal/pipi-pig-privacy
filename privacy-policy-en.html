@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Pipi Pig Android v1.5 privacy policy: Health Connect, local data, AdMob, UMP, Google Play Billing, permissions and deletion.">
+  <meta name="description" content="Pipi Pig Android v1.6 privacy policy: Health Connect, local data, AdMob, UMP, Google Play Billing, complimentary access, permissions and deletion.">
   <title>Pipi Pig | Privacy Policy</title>
   <link rel="stylesheet" href="privacy-policy.css">
   <link rel="alternate" hreflang="zh-Hant" href="https://kfal.github.io/pipi-pig-privacy/">
@@ -32,7 +32,7 @@
       <span>Pipi Pig</span>
     </div>
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: November 4, 2026<br>Applies to: Android v1.5 · Package <code>com.pipipig.app</code></p>
+    <p class="meta">Last updated: November 4, 2026<br>Applies to: Android v1.6 · Package <code>com.pipipig.app</code></p>
     <span class="tag">Health Connect · Ads and privacy choices · Google Play subscriptions</span>
     <div class="summary">
       <strong>Your health data is not a tool for tracking you.</strong>
@@ -43,7 +43,7 @@
 
   <aside class="notice" aria-labelledby="publication-title">
     <h2 id="publication-title">Policy website and app version</h2>
-    <p>This document describes the actual features of Android v1.5, including Health Connect, ads, subscriptions and the three-language interface. Updating this document does not upgrade previously installed APKs. The project maintenance contact is <strong>egiwkf@gmail.com</strong>, and the public maintainer name is egiwkf. Sections 9 and 12 explain contact details and how voluntarily emailed information is handled. Publishing an email address does not add an app account or automatic health-data upload feature.</p>
+    <p>This document describes the actual features of Android v1.6, including Health Connect, ads, subscriptions, complimentary access codes and the three-language interface. Updating this document does not upgrade previously installed APKs. The project maintenance contact is <strong>egiwkf@gmail.com</strong>, and the public maintainer name is egiwkf. Sections 9 and 12 explain contact details and how voluntarily emailed information is handled. Publishing an email address does not add an app account or automatic health-data upload feature.</p>
     <p>This policy is available without signing in. Its publication does not mean the app is publicly released on Google Play, subscriptions are available for purchase, or legal or platform compliance has been approved. Features, ads and purchase availability depend on the installed version and store configuration.</p>
   </aside>
 
@@ -67,7 +67,7 @@
 
   <section id="scope" aria-labelledby="scope-title">
     <h2 id="scope-title">1. Scope of this policy</h2>
-    <p>This policy explains how Pipi Pig Android v1.5 handles user input, Health Connect steps, necessary settings and cooldown information on your device; data processing by advertising, privacy messaging and Google Play subscription services; and information you voluntarily provide when contacting the maintainer. Section 12 lists the contact and public maintainer name. An account name is not a verified company name or legal entity name.</p>
+    <p>This policy explains how Pipi Pig Android v1.6 handles user input, Health Connect steps, necessary settings, complimentary access codes and cooldown information on your device; data processing by advertising, privacy messaging and Google Play subscription services; and information you voluntarily provide when contacting the maintainer. Section 12 lists the contact and public maintainer name. An account name is not a verified company name or legal entity name.</p>
     <p>The package covered by this policy is <code>com.pipipig.app</code>. The former <code>com.foreststeps.app</code> package and this package are separate apps with separate private storage and Health Connect data sources. Renaming does not automatically transfer old records, settings or permissions, or rewrite old health records. This policy does not mean an installed older app has been upgraded to the new package.</p>
     <p>This policy does not replace the policies of Android, Google, device manufacturers, other health apps or third-party websites. If you authorize other apps, use system backups or open external websites, their processing is governed by their policies and your settings.</p>
     <p>GitHub Pages hosts this policy website. When you visit, GitHub receives network request information, including your IP address, needed to serve and secure the website. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub General Privacy Statement</a>. This page does not load third-party analytics or advertising scripts, and the app does not send health records to this website.</p>
@@ -97,6 +97,7 @@
       <li><strong>Realtime sessions:</strong> steps per minute, write interval, active duration, session identifier, start time, active elapsed time, total steps, batch number, execution state, interruption messages and the cooldown policy applicable when that session ends.</li>
       <li><strong>Cooldown state:</strong> the ended session identifier, wall-clock and monotonic start times, and boot count, used to restore the five-minute cooldown after reopening the app or rebooting. A skip removes that cooldown only; rewards do not accumulate for later.</li>
       <li><strong>Appearance and widget settings:</strong> theme, custom HEX color and whether the widget shows Pipi Pig.</li>
+      <li><strong>Complimentary access codes:</strong> issuer-signed Plus/Pro codes you voluntarily enter, saved in app-private preferences and reverified offline when the app restarts. Codes are not sent to ads, Google Play or a developer server.</li>
       <li><strong>Installation identifier:</strong> randomly generated at first initialization and kept locally to select encouragement messages by installation and date. It is not an advertising ID, phone number or hardware serial number, and is not used for cross-app tracking.</li>
       <li><strong>Widget snapshots:</strong> local step totals and entry counts for the last 30 days, the latest daily health totals and update time, whether a health snapshot can be displayed, and the message selection and color settings needed for display.</li>
     </ul>
@@ -135,6 +136,8 @@
     <p>Google Play Billing 9.1.0 supports Plus and Pro as monthly auto-renewing digital-feature plans. Plus removes regular ads; rewarded ads are optional. Pro removes regular ads and has no cooldown or need for rewarded ads. Prices and availability come from local plans returned by Play. Purchases are disabled without the verification public key or configured products; integration does not mean paid sales are live. Google Play handles payment; Pipi Pig receives no card or complete payment details. PayPal, one-time tips and support packs are not integrated.</p>
     <p>The app queries product IDs, local prices, purchase tokens and states, signatures and acknowledgement status through Google Play. It verifies signatures and package/product/payment details in memory, then acknowledges purchases to grant, restore and recheck benefits. Pending payments grant no benefits. Purchase data is not written to local health JSON, ad parameters or health records, and health data is not sent to payment services. There is no developer verification backend, Developer API or RTDN integration. Current verification uses client-side signatures and live Play queries, not server-side tamper protection or instant refund push notifications.</p>
     <p>Settings → Monthly subscriptions lets you restore purchases and open Google Play management/cancellation. Subscriptions renew and charge monthly until cancelled. A cancelled but unexpired valid purchase retains benefits according to Play queries. Expiry, revocation or inability to verify shows a reason and applies Free limits without deleting user data. Running sessions keep their original settings; resuming or starting again rechecks benefits. Active subscriptions are rechecked every five minutes while the app is in the foreground. Google Play retains transaction, account and necessary diagnostic information under its own policies; the app does not control or guarantee Google's retention periods. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+    <h3>Complimentary access codes</h3>
+    <p>Version 1.6 provides Settings → Complimentary access, a visible entry available to all users, for issuer-signed free Plus or Pro access. It does not identify reviewers or create fake purchases. Codes require no account or payment, do not renew or expire, and can be reused. Signatures are verified and the complete code saved only on your device. These are not Google Play product promo codes; there is no remote account verification or individual revocation service. Verified purchases and codes provide whichever plan has greater benefits. Valid complimentary access remains when Play queries fail, an exception to the Free fallback described above. Removing a code does not cancel Play subscriptions or delete health records. Clearing storage or uninstalling removes the saved code; a valid code can be entered again. Do not share access codes publicly.</p>
     <p>When you authorize Health Connect writes, Health Connect stores those records. If you separately authorize other apps to read them, their use depends on their policies and your permissions. Pipi Pig cannot be assumed to control or prevent that subsequent processing.</p>
     <p>Before adding other ad services, purchases, analytics or cloud features, the actual data types, providers, purposes, retention and choices must be explained, this policy and store disclosures updated, and any required consent obtained. <strong>This policy does not authorize repurposing existing health data for advertising, sale or other undisclosed uses.</strong></p>
   </section>
@@ -187,7 +190,7 @@
   <section id="updates" aria-labelledby="updates-title">
     <h2 id="updates-title">11. Policy updates</h2>
     <p>Changes to app versions, permissions, data uses, third-party services or retention must be reflected in this policy with a new date and applicable version. Where further notice or consent is required, it must be provided before the new use under applicable law and platform rules. Updating this page alone does not replace required consent.</p>
-    <p>Last updated November 4, 2026. This policy covers Android v1.5 local processing, AdMob/UMP, Google Play Billing, language switching and voluntary email contact. It does not cover unimplemented cloud health or purchase-verification services. Previously installed APKs continue their original behavior. Publishing this policy does not mean the app is released or legal or platform compliance has been approved.</p>
+    <p>Last updated November 4, 2026. This policy covers Android v1.6 local processing, AdMob/UMP, Google Play Billing, complimentary access codes, language switching and voluntary email contact. It does not cover unimplemented cloud health or purchase-verification services. Previously installed APKs continue their original behavior. Publishing this policy does not mean the app is released or legal or platform compliance has been approved.</p>
   </section>
 
   <section id="contact" aria-labelledby="contact-title">
@@ -198,7 +201,7 @@
     <p>Sections 7 and 9 explain how to view, correct, revoke access to and delete local or Health Connect data. Do not provide passwords, verification codes, payment information or unrelated sensitive content.</p>
   </section>
 
-  <footer>Pipi Pig · Android v1.5 Privacy Policy<br>This HTML page uses system fonts and loads no external images, tracking scripts or third-party analytics. Section 1 covers GitHub Pages hosting; section 6 covers the app's advertising and subscription processing.</footer>
+  <footer>Pipi Pig · Android v1.6 Privacy Policy<br>This HTML page uses system fonts and loads no external images, tracking scripts or third-party analytics. Section 1 covers GitHub Pages hosting; section 6 covers the app's advertising and subscription processing.</footer>
 </main>
 </body>
 </html>
