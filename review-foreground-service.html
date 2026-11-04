@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; media-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>Pipi Pig v1.6 foreground service demonstration</title>
+<style>
+body{margin:0;background:#fcf6f9;color:#493b47;font:16px/1.7 system-ui,sans-serif}
+main{max-width:860px;margin:32px auto;padding:28px;background:#fff;border:1px solid #ecd3df;border-radius:22px}
+h1{font-size:28px;line-height:1.4}a{color:#934563;overflow-wrap:anywhere}
+video{display:block;width:100%;max-height:80vh;background:#18131a;border-radius:12px}
+li{margin:12px 0}.note{padding:16px;border:1px solid #e8d9b2;background:#fff9eb;border-radius:12px}
+@media(max-width:600px){main{margin:14px;padding:20px}h1{font-size:24px}}
+</style>
+</head>
+<body>
+<main>
+<h1>Pipi Pig v1.6: user-started foreground sync</h1>
+<p>Google Play review demonstration for <code>com.pipipig.app</code>, version 1.6 (version code 8). This recording uses the signed release APK on an isolated Android 15 emulator, not a customer's phone. All displayed step records are synthetic test data; no personal health records or account credentials are shown.</p>
+<p>Two unedited screen recordings show the same realtime session. The second recording continues later in that session; the gap between recordings is not presented as continuous footage.</p>
+<h2>Part 1: Start and background notification</h2>
+<video controls playsinline preload="metadata" aria-describedby="demonstration">
+<source src="assets/pipi-pig-v1.6-foreground-service.mp4" type="video/mp4">
+Your browser cannot play this video. <a href="assets/pipi-pig-v1.6-foreground-service.mp4">Open the MP4 directly.</a>
+</video>
+<p><a href="assets/pipi-pig-v1.6-foreground-service.mp4">Open or download the demonstration MP4</a>. Silent screen recording; the actions are described below.</p>
+<h2>Part 2: Pause, Resume, End and synced records</h2>
+<video controls playsinline preload="metadata" aria-describedby="demonstration">
+<source src="assets/pipi-pig-v1.6-service-controls.mp4" type="video/mp4">
+Your browser cannot play this video. <a href="assets/pipi-pig-v1.6-service-controls.mp4">Open the second MP4 directly.</a>
+</video>
+<p><a href="assets/pipi-pig-v1.6-service-controls.mp4">Open or download the controls MP4</a>. This silent continuation shows app controls and the emulator's resulting manual records.</p>
+<div id="demonstration">
+<h2>What the demonstration shows</h2>
+<ol>
+<li>The user reviews the configured pace, write interval and active duration, then explicitly taps <strong>Start</strong> in Realtime mode.</li>
+<li>The user leaves the app. A visible foreground notification identifies realtime <strong>manual input</strong> and shows progress while the service continues.</li>
+<li>The user returns to the app and taps <strong>Pause</strong>, then <strong>Resume</strong>. Pausing stops elapsed-time estimation and flushes the partial batch.</li>
+<li>The user taps <strong>End</strong>. The final partial batch is written, the service ends, and the normal Free-plan cooldown is displayed.</li>
+<li>The Health screen shows the emulator's locally created records and Health Connect integration.</li>
+</ol>
+<p class="note">This is pace/time estimation and local Health Connect synchronization using a <code>dataSync</code> foreground service. It is not sensor counting, GPS tracking or medical monitoring. Writes are marked as manual input. Health Connect and notification permissions were granted through Android's normal permission screens before this recording. No test data is written to a real person's device.</p>
+</div>
+<p><a href="privacy-policy-en.html">Privacy policy</a> · <a href="mailto:egiwkf@gmail.com">Developer contact</a></p>
+</main>
+</body>
+</html>
