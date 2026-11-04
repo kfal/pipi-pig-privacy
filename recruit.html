@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#fcf6f9">
+<meta name="description" content="皮皮豬 Pipi Pig Android 封閉測試招募：手動補記真實活動步數、日曆紀錄與柔和主題。邀請願意實際使用與回饋的你一起參與。">
+<title>一起讓小豬進步｜皮皮豬 Pipi Pig 封閉測試招募</title>
+<link rel="icon" type="image/png" href="assets/pipi-pig-icon-512.png">
+<style>
+:root{color-scheme:light;--ink:#493b47;--muted:#72616e;--rose:#934563;--line:#ecd3df;--wash:#fcf6f9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;background:var(--wash);color:var(--ink);font:16px/1.85 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:#83405f;text-underline-offset:4px;overflow-wrap:anywhere}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #546c9f;outline-offset:4px}
+p{margin:12px 0}
+h1,h2,h3{line-height:1.5}
+h1{font-size:clamp(30px,3.8vw,46px);letter-spacing:-.035em;margin:0 0 22px}
+h2{font-size:clamp(25px,3vw,32px);letter-spacing:-.02em;margin:0 0 14px}
+h3{font-size:18px;margin:0 0 8px}
+small,.small{font-size:13px;color:var(--muted)}
+.shell{width:min(1160px,calc(100% - 64px));margin:auto}
+.skip{position:absolute;top:-100px;left:16px;z-index:2;background:#fff;padding:12px 20px;border:2px solid var(--rose);border-radius:12px}
+.skip:focus{top:12px}
+.site-nav{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0}
+.wordmark{display:flex;align-items:center;gap:12px;font-size:19px;font-weight:750;text-decoration:none}
+.wordmark img{border-radius:14px}
+.english{font-size:13px;font-weight:500;margin-left:5px}
+.nav-links{display:flex;gap:24px;font-size:14px}
+.nav-links a{text-decoration:none}
+.nav-links a:hover,.wordmark:hover{text-decoration:underline}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;align-items:center;gap:30px;padding:52px 48px;border:1px solid #e8bbce;border-radius:32px;background:linear-gradient(125deg,#fff 25%,#f9e9ef 100%)}
+.eyebrow{font-size:13px;font-weight:750;letter-spacing:.08em;color:var(--rose);margin:0 0 16px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--rose);margin-right:7px}
+.rose{color:var(--rose)}
+.lead{color:var(--muted);max-width:760px}
+.hero .lead{max-width:470px;font-size:17px}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin:26px 0 12px}
+button{cursor:pointer;font:inherit}
+.primary{display:inline-flex;align-items:center;justify-content:center;gap:24px;padding:14px 22px;border:1px solid var(--rose);border-radius:14px;background:var(--rose);color:#fff;text-decoration:none;font-weight:700;box-shadow:0 5px 0 #e7c2d1}
+.primary:hover{background:#78364f}
+.secondary{padding:12px 16px;border:1px solid var(--rose);border-radius:12px;background:#fff;color:var(--rose)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-top:24px;margin:28px 0 0;border-top:1px solid #e8ceda}
+.facts dt{font-size:12px;color:var(--muted)}
+.facts dd{font-size:24px;font-weight:750;margin:5px 0 0;line-height:1.45}
+.facts dd span{display:block;font-size:12px;font-weight:500}
+.hero figure{margin:0;text-align:center}
+.picture-label{display:inline-block;font-size:12px;background:#fff9eb;border:1px solid #e4d3a8;border-radius:30px;padding:7px 16px;margin-bottom:18px;transform:rotate(-3deg)}
+.hero-shot{display:block;width:min(245px,100%);height:auto;margin:auto;border:5px solid #fff;border-radius:24px;box-shadow:0 16px 36px #76415526}
+.hero figcaption{margin-top:16px;font-size:12px;color:var(--muted)}
+section{margin-top:24px;padding:44px;background:#fff;border:1px solid var(--line);border-radius:28px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:30px}
+.number{display:inline-block;font-size:12px;font-weight:750;color:var(--rose);background:#faedf2;border-radius:10px;padding:5px 10px;margin-bottom:16px}
+.features p{color:var(--muted);font-size:14px}
+.note{background:#fff9eb;border:1px solid #e8d9b2;padding:18px 22px;border-radius:16px;margin-top:24px;font-size:14px}
+.note p{margin:6px 0 0}
+.preview{background:#f9edf2}
+.section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:26px}
+.section-heading h2{margin-bottom:0}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.gallery figure{margin:0;min-width:0}
+.gallery a{display:block;border-radius:18px}
+.gallery img{display:block;width:100%;height:auto;border:4px solid #fff;border-radius:18px;box-shadow:0 8px 20px #76415512}
+.gallery figcaption{margin-top:16px;font-size:13px;color:var(--muted)}
+.gallery strong{display:block;font-size:16px;color:var(--ink);margin-bottom:6px}
+.pro{display:block;width:fit-content;font-size:11px;color:#66501c;background:#f8e9b8;padding:1px 6px;border-radius:5px;margin-top:5px}
+.participation{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:28px}
+.requirements{background:#fcf6f9;border-radius:20px;padding:24px}
+ul{padding-left:20px}
+.requirements li{font-size:14px;margin:14px 0}
+.steps{counter-reset:step;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:step;display:flex;gap:16px;margin:0 0 24px}
+.steps li::before{content:counter(step,decimal-leading-zero);display:flex;align-items:center;justify-content:center;flex:0 0 36px;width:36px;height:36px;background:#f5e1e9;color:var(--rose);border-radius:12px;font-size:13px;font-weight:750}
+.steps p{font-size:14px;color:var(--muted);margin:0}
+.signup{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:start;border:2px dashed #dfabc2;background:#fff9fc}
+.signup-copy{min-width:0}
+.signup-copy>p:not(.eyebrow){font-size:15px}
+.privacy{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;font-size:14px}
+.privacy h3{font-size:17px}
+.privacy .small{font-size:12px}
+form{margin-top:24px}
+form>label{display:block;font-size:14px;font-weight:650}
+input[type=email],textarea{display:block;width:100%;min-width:0;background:#fff;color:var(--ink);border:1px solid #bd8ba0;border-radius:12px;padding:12px 14px;font:inherit;margin-top:10px}
+.consent{display:flex;align-items:flex-start;gap:10px;margin-top:18px;font-size:13px;font-weight:400;cursor:pointer}
+.consent input{flex:0 0 18px;width:18px;height:18px;margin:4px 0 0;accent-color:var(--rose)}
+form .actions{gap:14px;margin-top:22px}
+form button{font-size:14px}
+.status{font-size:14px;font-weight:650;color:var(--rose)}
+textarea{font-size:14px;resize:vertical}
+#draft-panel{border-top:1px solid var(--line);padding-top:18px;margin-top:18px}
+[hidden]{display:none!important}
+.no-script{padding:14px;background:#fff9eb;border:1px solid #e8d9b2;border-radius:12px;font-size:14px}
+details{border-top:1px solid var(--line);padding:18px 0}
+details:last-child{padding-bottom:0}
+summary{cursor:pointer;font-weight:650;padding:3px 4px}
+details p{font-size:14px;color:var(--muted);margin:14px 4px 0}
+footer{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;padding:32px 4px;font-size:12px;color:var(--muted)}
+footer div{display:flex;gap:20px}
+footer p{width:100%;margin:0;font-size:11px}
+@media(max-width:960px){.shell{width:calc(100% - 40px)}.hero{padding:32px;gap:20px;grid-template-columns:1.25fr 1fr}h1{font-size:34px}section{padding:32px}.gallery{gap:14px}.features{gap:20px}.participation,.signup{gap:24px}}
+@media(max-width:700px){.shell{width:calc(100% - 28px)}.site-nav{padding:18px 2px;gap:12px}.wordmark{font-size:16px;gap:8px}.wordmark img{width:36px;height:36px;border-radius:10px}.english{display:block;margin:0;font-size:10px;line-height:1.1}.nav-links{gap:14px;font-size:12px}.hero{grid-template-columns:1fr;padding:30px 24px;border-radius:24px;gap:32px}h1{font-size:clamp(29px,6.8vw,42px)}.hero .lead{font-size:15px}.primary{padding:12px 18px;font-size:14px}.hero-shot{width:min(230px,100%)}section{padding:28px 22px;border-radius:24px;margin-top:18px}.features,.participation,.signup{grid-template-columns:1fr;gap:20px}.features article{border-bottom:1px solid var(--line);padding-bottom:10px}.features article:last-child{border-bottom:0}.section-heading{display:block}.section-heading>p{margin-top:12px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 16px}.gallery strong{font-size:15px}.gallery figcaption{font-size:12px}.note,.requirements,.privacy{padding:18px}.steps{margin-top:8px}footer{padding:26px 8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{body{background:#fff}.site-nav,.actions,.skip,form{display:none}.shell{width:100%}.hero,section{padding:16px 0;border:0;background:#fff}.hero figure{display:none}.hero,.signup{display:block}.gallery img{box-shadow:none}details>*{display:block}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<div class="shell">
+<nav class="site-nav" aria-label="網站導覽">
+<a class="wordmark" href="recruit.html" aria-current="page"><img src="assets/pipi-pig-icon-512.png" width="44" height="44" alt=""><span>皮皮豬 <span class="english" lang="en">Pipi Pig</span></span></a>
+<div class="nav-links"><a href="#preview">看看 App</a><a href="index.html">隱私權政策</a></div>
+</nav>
+<main id="main">
+<header class="hero">
+<div>
+<p class="eyebrow"><span class="dot" aria-hidden="true"></span>Android 封閉測試 · 志願者招募</p>
+<h1>把漏掉的步數補上，<br>把日常留得<span class="rose">柔軟一點。</span></h1>
+<p class="lead">我是皮皮豬，一個陪你整理真實活動步數的小幫手。正在尋找願意實際使用、分享感受的你，一起把這隻小豬照顧得更好。</p>
+<div class="actions"><a class="primary" href="#signup">填寫報名資料 <span aria-hidden="true">↗</span></a><a class="small" href="#how">先了解怎麼參加 ↓</a></div>
+<p class="small">不需購買 · 非公開上架公告 · 寄出報名信不等於加入測試</p>
+<dl class="facts"><div><dt>招募目標</dt><dd>15–20 <span>位志願者</span></dd></div><div><dt>參與期間</dt><dd>14 <span>天連續加入</span></dd></div><div><dt>系統需求</dt><dd>Android 9<span>以上</span></dd></div></dl>
+</div>
+<figure><div class="picture-label">一點一滴，記下你的日常</div><img class="hero-shot" src="assets/pipi-pig-home.png" width="1080" height="1920" alt="皮皮豬 v1.6 首頁實機畫面：每日步數與手動補記介面" fetchpriority="high"><figcaption>Android v1.6 實機畫面</figcaption></figure>
+</header>
+<section aria-labelledby="intro-title">
+<p class="eyebrow">小小工具，認真記錄</p>
+<h2 id="intro-title">不是替你走路，是讓紀錄更完整。</h2>
+<p class="lead">忘了帶手機，或活動後想補上紀錄？用皮皮豬手動補記真實活動，再用日曆回看自己的節奏。</p>
+<div class="features">
+<article><span class="number">01</span><h3>補記，也能好好整理</h3><p>手動記下活動步數與時間，修改或刪除皮皮豬建立、且仍有本機對應資訊的紀錄，不動其他 App 的資料。</p></article>
+<article><span class="number">02</span><h3>日曆裡，看見每一天</h3><p>透過日曆與歷史紀錄回顧補記內容，讓今天、昨天與忙碌的一週，都有跡可循。</p></article>
+<article><span class="number">03</span><h3>自己的柔和配色</h3><p>打開皮皮豬的蠟筆盒，選擇柔和主題或自訂配色，把每天打開的小工具變成自己看著舒服的樣子。</p></article>
+</div>
+<aside class="note"><strong>關於估算與健康資料</strong><p>步頻／時間功能是估算，不是感測器計步，也不使用 GPS 測量。寫入 Health Connect 的步數一律標示為手動輸入；其他健康 App 是否採計，由各服務自行決定。請只補記真實活動，不用於偽造步數或獎勵。</p></aside>
+</section>
+<section id="preview" class="preview" aria-labelledby="preview-title">
+<div class="section-heading"><div><p class="eyebrow">先跟皮皮豬見個面</p><h2 id="preview-title">真實畫面，不是想像。</h2></div><p class="small">以下皆為 Android v1.6 實機截圖。<br>功能以實際測試版本與方案為準。</p></div>
+<div class="gallery">
+<figure><a href="assets/pipi-pig-home.png" aria-label="開啟首頁與補記的完整截圖"><img src="assets/pipi-pig-home.png" width="1080" height="1920" alt="首頁與手動補記實機畫面" loading="lazy"></a><figcaption><strong>日常補記</strong>漏掉的真實活動，自己補上。</figcaption></figure>
+<figure><a href="assets/pipi-pig-history.png" aria-label="開啟日曆與歷史紀錄的完整截圖"><img src="assets/pipi-pig-history.png" width="1080" height="1920" alt="日曆與歷史紀錄實機畫面" loading="lazy"></a><figcaption><strong>日曆與歷史</strong>回頭看看，每一天的小累積。</figcaption></figure>
+<figure><a href="assets/pipi-pig-realtime.png" aria-label="開啟 Pro 方案實時估算模式的完整截圖"><img src="assets/pipi-pig-realtime.png" width="1080" height="1920" alt="Pro 方案實時模式：依步頻與時間估算，非感測器或 GPS 計步" loading="lazy"></a><figcaption><strong>實時估算 <span class="pro">Pro 方案畫面</span></strong>依步頻與時間估算，非實測步數。參與測試不代表免費取得 Pro。</figcaption></figure>
+<figure><a href="assets/pipi-pig-themes.png" aria-label="開啟主題配色的完整截圖"><img src="assets/pipi-pig-themes.png" width="1080" height="1920" alt="蠟筆盒的柔和主題與自訂配色實機畫面" loading="lazy"></a><figcaption><strong>自己的柔和配色</strong>選一支今天喜歡的蠟筆。</figcaption></figure>
+</div>
+</section>
+<section id="how" aria-labelledby="how-title">
+<p class="eyebrow">一起參與，不用趕路</p><h2 id="how-title">我們需要的是你的真實體驗。</h2>
+<p class="lead">希望招募 15–20 位志願者，協助至少 12 位測試者持續加入封閉測試滿 14 天。這不是每天打卡換獎勵，也不是只留下 email 就結束。</p>
+<div class="participation">
+<div class="requirements"><h3>參加前，確認這幾件事</h3><ul><li>有 Android 9 以上手機與可使用 Google Play 的 Google 帳號。</li><li>若要測試健康資料整合，裝置必須相容且可使用 Health Connect；並非每部 Android 9 以上裝置都支援。</li><li>正式取得邀請並加入後，願意連續保留測試資格至少 14 天，期間實際使用並回報感受。</li><li>不需購買任何方案，不必提供五星好評；遇到問題或不好用的地方，請直接告訴我們。</li></ul></div>
+<ol class="steps"><li><div><h3>填 email，親自寄出報名信</h3><p>填入你在 Google Play 使用的帳號 email，開啟郵件草稿後，必須在郵件 App 按下「寄出」。請勿在公開 GitHub 留言中提供 email。</p></div></li><li><div><h3>等候資格確認與邀請</h3><p>維護者收到信後人工處理，沒有自動匯入 Play 名單或自動寄信。符合資格、測試可用後，才會另行提供加入連結與說明。</p></div></li><li><div><h3>正式加入，體驗至少 14 天</h3><p>依邀請連結完成 Google Play 加入與安裝；連續加入期間從實際加入測試起算，不是從寄信當天起算。分享實際使用的問題與建議即可。</p></div></li></ol>
+</div>
+</section>
+<section id="signup" class="signup" aria-labelledby="signup-title">
+<div class="signup-copy"><p class="eyebrow">謝謝你，願意陪小豬長大</p><h2 id="signup-title">留下 Google Play email，<br>用郵件報名。</h2>
+<p>目前採<strong>私人電子郵件報名</strong>，不是 Google 表單。本站不會送出或保存表單資料，按鈕只準備郵件草稿；你必須在郵件 App 親自按下「寄出」，維護者才會收到。</p>
+<form id="signup-form">
+<label for="play-email">Google Play 使用的 Google 帳號 email（必填）</label>
+<input id="play-email" type="email" autocomplete="email" inputmode="email" placeholder="you@gmail.com" required maxlength="254" aria-describedby="email-help">
+<p id="email-help" class="small">請填你將用來加入測試的帳號；不需要密碼、驗證碼或健康紀錄。</p>
+<label class="consent"><input id="signup-consent" type="checkbox" required aria-describedby="signup-privacy-title"><span>我已閱讀本頁報名資料說明，同意 email 用於測試資格確認、邀請與回饋聯絡；了解需自行寄信，且報名不等於加入 Google Play 測試。</span></label>
+<div class="actions"><button class="primary" type="submit">開啟郵件報名 <span aria-hidden="true">↗</span></button><button id="copy-draft" class="secondary" type="button">複製報名草稿</button></div>
+<p id="signup-status" class="status" role="status" aria-live="polite"></p>
+<div id="draft-panel" hidden><label for="draft-text">報名草稿（可手動選取複製）</label><textarea id="draft-text" rows="10" readonly spellcheck="false"></textarea><p class="small">請貼到你的郵件 App，寄給 <strong>egiwkf@gmail.com</strong>。這份草稿尚未寄出；本站無法確認你是否完成寄信。</p></div>
+<noscript><p class="no-script">本頁需要 JavaScript 才能準備草稿。你也可自行寄信至 egiwkf@gmail.com，主旨填「皮皮豬 Android 封閉測試報名」，內容提供 Google Play email，並註明同意本頁報名資料用途及願意連續加入至少 14 天、實際使用與回饋。填寫本頁不會自動寄信。</p></noscript>
+</form>
+</div>
+<aside class="privacy" aria-labelledby="signup-privacy-title"><h3 id="signup-privacy-title">你的 email，只為這次測試聯絡</h3>
+<p>報名信由維護者信箱 <a href="mailto:egiwkf@gmail.com">egiwkf@gmail.com</a> 私下接收，用於測試資格確認、邀請與回饋聯絡；不會放進公開 GitHub 或展示在本頁。資料僅於測試招募及必要後續聯絡期間保留。</p>
+<p>網站不將輸入存入網址、日誌或本機儲存，也不連接收件後端。開啟郵件時，email 會交給你選擇的郵件 App；信件由寄件及收件郵件服務依各自政策處理。複製草稿則會將內容放入你的剪貼簿，請留意共用裝置與剪貼簿同步設定。</p>
+<p>如要撤回報名或要求刪除報名資料，請寄信至上述信箱。不要提供密碼、驗證碼、付款資訊或健康紀錄。</p>
+<p class="small">收件服務政策：<a href="https://policies.google.com/privacy">Google 隱私權政策</a>。本站由 GitHub Pages 託管，網站請求資訊說明見 <a href="index.html">隱私權政策</a>。</p>
+</aside>
+</section>
+<section aria-labelledby="faq-title"><h2 id="faq-title">你可能也想知道</h2>
+<details><summary>報名後就能立即下載嗎？</summary><p>不是。寄出報名信只代表表達參與意願，不等於取得測試資格、加入 Google Play 測試或成功安裝。測試可用且符合資格後，維護者會另行提供加入連結；本頁不代表 App 已公開上架。</p></details>
+<details><summary>需要付費，或能免費拿到 Pro 嗎？</summary><p>參與測試不需購買，亦不承諾贈送 Plus／Pro 或其他付費功能。Pro 截圖只是方案示意，可用內容以實際測試版本與方案為準。</p></details>
+<details><summary>沒有設定郵件 App 怎麼辦？</summary><p>填好 email 並勾選同意後，按「複製報名草稿」，貼到你慣用的網頁信箱，寄給 egiwkf@gmail.com。若瀏覽器無法複製，下方也會展開可手動選取的草稿。開啟草稿或複製都不代表已寄出，本站不顯示「報名成功」。</p></details>
+<details><summary>需要上傳我的健康資料嗎？</summary><p>招募不需要健康紀錄。測試時可自行決定 Health Connect 授權；本機紀錄與 Health Connect 資料分別管理。回報問題時請遮蔽不必要的個人或健康資訊，完整說明請見 <a href="index.html">App 隱私權政策</a>。</p></details>
+<details><summary>中途不能繼續，或想刪除登記資料怎麼辦？</summary><p>你可以自行退出測試；若無法繼續，請通知維護者方便調整招募安排。撤回登記或刪除報名資料請寄信至 <a href="mailto:egiwkf@gmail.com">egiwkf@gmail.com</a>；退出測試與刪除 App／Health Connect 紀錄是不同操作，相關方式見 <a href="index.html">資料管理說明</a>。</p></details>
+</section>
+</main>
+<footer><span>皮皮豬 Pipi Pig · 用自己的步調，記下每一天。</span><div><a href="index.html">隱私權政策</a><a href="mailto:egiwkf@gmail.com">聯絡維護者</a></div><p>Android v1.6 封閉測試招募 · 尚非 Google Play 正式公開上架</p></footer>
+</div>
+<script>
+"use strict";
+(() => {
+  const form = document.getElementById("signup-form");
+  const email = document.getElementById("play-email");
+  const status = document.getElementById("signup-status");
+  const panel = document.getElementById("draft-panel");
+  const draftText = document.getElementById("draft-text");
+  const copyButton = document.getElementById("copy-draft");
+  const recipient = "egiwkf@gmail.com";
+  const subject = "皮皮豬 Android 封閉測試報名";
+  let revision = 0;
+
+  function prepareDraft() {
+    email.value = email.value.trim();
+    if (!form.reportValidity()) return null;
+    const body = [
+      "你好，我想報名皮皮豬 Pipi Pig Android 封閉測試。",
+      "",
+      `Google Play 帳號 email：${email.value}`,
+      "",
+      "我已閱讀招募頁的報名資料說明，同意 email 用於測試資格確認、邀請與回饋聯絡。",
+      "我了解報名不等於加入 Google Play 測試，將等待維護者人工確認與另行提供加入連結。",
+      "我願意正式加入後連續保留測試資格至少 14 天，實際使用並提供真實回饋。",
+      "我了解不需購買，參與測試不代表免費取得 Pro。"
+    ].join("\r\n");
+    draftText.value = `收件者：${recipient}\r\n主旨：${subject}\r\n\r\n${body}`;
+    panel.hidden = false;
+    return body;
+  }
+
+  function manualCopy(message) {
+    status.textContent = message;
+    draftText.focus();
+    draftText.select();
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const body = prepareDraft();
+    if (body === null) return;
+    status.textContent = "正在嘗試開啟郵件 App；尚未寄出。請在郵件 App 按「寄出」。若未開啟，請複製下方草稿，自行寄信。";
+    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+
+  copyButton.addEventListener("click", async () => {
+    if (prepareDraft() === null) return;
+    if (!navigator.clipboard || !window.isSecureContext) {
+      manualCopy("此瀏覽器無法自動複製。請手動選取下方草稿，貼到郵件中並親自寄出；尚未完成報名。");
+      return;
+    }
+    const currentRevision = revision;
+    copyButton.disabled = true;
+    status.textContent = "正在複製草稿，尚未寄出。";
+    try {
+      await navigator.clipboard.writeText(draftText.value);
+      if (revision !== currentRevision) return;
+      status.textContent = "已複製報名草稿，尚未寄出。請貼到郵件中，寄給 egiwkf@gmail.com；本站無法確認寄信狀態。";
+    } catch (error) {
+      if (revision !== currentRevision) return;
+      manualCopy("瀏覽器未允許複製。請手動選取下方草稿，貼到郵件中並親自寄出；尚未完成報名。");
+    } finally {
+      copyButton.disabled = false;
+    }
+  });
+
+  form.addEventListener("input", () => {
+    revision += 1;
+    panel.hidden = true;
+    draftText.value = "";
+    status.textContent = "";
+  });
+})();
+</script>
+</body>
+</html>
