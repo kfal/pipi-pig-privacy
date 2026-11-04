@@ -20,23 +20,16 @@ li{margin:12px 0}.note{padding:16px;border:1px solid #e8d9b2;background:#fff9eb;
 <main>
 <h1>Pipi Pig v1.6: user-started foreground sync</h1>
 <p>Google Play review demonstration for <code>com.pipipig.app</code>, version 1.6 (version code 8). This recording uses the signed release APK on an isolated Android 15 emulator, not a customer's phone. All displayed step records are synthetic test data; no personal health records or account credentials are shown.</p>
-<p>Two unedited screen recordings show the same realtime session. The second recording continues later in that session; the gap between recordings is not presented as continuous footage.</p>
-<h2>Part 1: Start and background notification</h2>
+<p>One complete, unedited screen recording shows user initiation, background operation, notification visibility, pause/resume, explicit termination and the resulting manual records.</p>
 <video controls playsinline preload="metadata" aria-describedby="demonstration">
-<source src="assets/pipi-pig-v1.6-foreground-service.mp4" type="video/mp4">
-Your browser cannot play this video. <a href="assets/pipi-pig-v1.6-foreground-service.mp4">Open the MP4 directly.</a>
+<source src="assets/pipi-pig-v1.6-complete-service-demo.mp4" type="video/mp4">
+Your browser cannot play this video. <a href="assets/pipi-pig-v1.6-complete-service-demo.mp4">Open the MP4 directly.</a>
 </video>
-<p><a href="assets/pipi-pig-v1.6-foreground-service.mp4">Open or download the demonstration MP4</a>. Silent screen recording; the actions are described below.</p>
-<h2>Part 2: Pause, Resume, End and synced records</h2>
-<video controls playsinline preload="metadata" aria-describedby="demonstration">
-<source src="assets/pipi-pig-v1.6-service-controls.mp4" type="video/mp4">
-Your browser cannot play this video. <a href="assets/pipi-pig-v1.6-service-controls.mp4">Open the second MP4 directly.</a>
-</video>
-<p><a href="assets/pipi-pig-v1.6-service-controls.mp4">Open or download the controls MP4</a>. This silent continuation shows app controls and the emulator's resulting manual records.</p>
+<p><a href="assets/pipi-pig-v1.6-complete-service-demo.mp4">Open or download the demonstration MP4</a>. Silent screen recording; the actions are described below.</p>
 <div id="demonstration">
 <h2>What the demonstration shows</h2>
 <ol>
-<li>The user reviews the configured pace, write interval and active duration, then explicitly taps <strong>Start</strong> in Realtime mode.</li>
+<li>The user explicitly taps <strong>Start</strong> in Realtime mode to begin a pace/time estimation session.</li>
 <li>The user leaves the app. A visible foreground notification identifies realtime <strong>manual input</strong> and shows progress while the service continues.</li>
 <li>The user returns to the app and taps <strong>Pause</strong>, then <strong>Resume</strong>. Pausing stops elapsed-time estimation and flushes the partial batch.</li>
 <li>The user taps <strong>End</strong>. The final partial batch is written, the service ends, and the normal Free-plan cooldown is displayed.</li>
