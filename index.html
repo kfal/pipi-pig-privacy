@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="皮皮豬 Android v1.5 隱私權政策：Health Connect、本機資料、AdMob、UMP、Google Play Billing、權限與刪除方式。">
+  <title>皮皮豬 Pipi Pig｜隱私權政策（訂閱與獎勵廣告版）</title>
+  <style>
+    :root { color-scheme: light; --ink: #493b47; --muted: #72616e; --rose: #934563; --line: #ecd3df; --wash: #fcf6f9; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+    body { margin: 0; background: var(--wash); color: var(--ink); font: 16px/1.85 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { width: min(920px, calc(100% - 32px)); margin: 32px auto 48px; }
+    header, section, nav, aside { background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: 28px; margin-bottom: 18px; }
+    header { border: 2px dashed #e8bbce; }
+    .brand { display: flex; align-items: center; gap: 14px; color: var(--rose); font-weight: 700; }
+    .brand svg { flex: 0 0 64px; height: 64px; }
+    h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.35; margin: 20px 0 12px; }
+    h2 { font-size: 22px; line-height: 1.5; margin: 0 0 14px; color: var(--rose); }
+    h3 { font-size: 18px; margin: 24px 0 8px; }
+    p { margin: 12px 0; }
+    ul, ol { padding-left: 24px; margin: 12px 0; }
+    li { margin: 7px 0; }
+    a { color: #83405f; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:focus-visible, button:focus-visible { outline: 3px solid #546c9f; outline-offset: 4px; }
+    .meta, .small { font-size: 14px; color: var(--muted); }
+    .tag { display: inline-block; background: #f8e9b8; color: #66501c; border-radius: 10px; padding: 3px 12px; font-weight: 700; }
+    .notice { background: #fffaf0; border-color: #dec88c; }
+    .notice h2 { color: #66501c; }
+    .summary { background: #fff8fb; border-left: 4px solid #c7809e; padding: 12px 18px; border-radius: 12px; margin-top: 20px; }
+    nav ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 20px; }
+    nav li { margin: 0; }
+    button { cursor: pointer; border: 1px solid var(--rose); border-radius: 12px; background: #fff; color: var(--rose); padding: 10px 16px; font: inherit; }
+    code { font-size: .9em; overflow-wrap: anywhere; }
+    footer { color: var(--muted); text-align: center; font-size: 14px; padding: 10px 12px; }
+    @media (max-width: 600px) {
+      main { width: calc(100% - 24px); margin-top: 16px; }
+      header, section, nav, aside { padding: 20px; border-radius: 18px; }
+      nav ul { grid-template-columns: 1fr; }
+      h2 { font-size: 20px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print {
+      body { background: #fff; font-size: 11pt; }
+      main { width: 100%; margin: 0; }
+      nav, .print-button { display: none; }
+      header, section, aside { border: none; border-radius: 0; padding: 8px 0; margin-bottom: 12px; }
+      h2, h3 { break-after: avoid; }
+      li { break-inside: avoid; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">
+      <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+        <path d="M24 30 Q10 10 24 12 Q36 12 39 27 M68 27 Q79 10 89 16 Q94 23 81 33" fill="#efb5d0" stroke="#796373" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M14 49 Q16 23 50 24 Q83 20 89 48 Q99 74 77 89 Q53 101 29 88 Q8 77 14 49Z" fill="#facde0" stroke="#796373" stroke-width="3.5"/>
+        <path d="M45 25 Q38 15 46 10 Q58 6 60 16 Q60 23 51 19" fill="none" stroke="#796373" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="33" cy="48" r="3.5" fill="#5a4353"/><circle cx="68" cy="48" r="3.5" fill="#5a4353"/>
+        <ellipse cx="50" cy="60" rx="14" ry="9" fill="#f1b0cc" stroke="#98758d" stroke-width="2.5"/>
+        <ellipse cx="44" cy="60" rx="2" ry="3" fill="#95667f"/><ellipse cx="57" cy="60" rx="2" ry="3" fill="#95667f"/>
+        <path d="M43 75 Q51 82 59 74 M24 66L27 63 M73 65L76 62" fill="none" stroke="#796373" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M21 39L27 36 M20 77L27 74 M32 84L39 81 M67 84L75 80 M77 38L82 42" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".6"/>
+      </svg>
+      <span>皮皮豬 · Pipi Pig</span>
+    </div>
+    <h1>隱私權政策</h1>
+    <p class="meta">最後更新：2026 年 11 月 4 日<br>適用範圍：Android v1.5 · 套件 <code>com.pipipig.app</code></p>
+    <span class="tag">Health Connect · 廣告與隱私選擇 · Google Play 訂閱</span>
+    <div class="summary">
+      <strong>你的健康資料，不是用來追蹤你的工具。</strong>
+      <p>皮皮豬用來整理與補記真實活動步數。不需要建立皮皮豬帳號，沒有接收健康資料的開發者後端，已加入 Google AdMob、UMP 隱私訊息與 Google Play Billing SDK。Plus／Pro 月訂閱需完成商店配置才可購買；免費／Plus 獎勵廣告只供自願跳過冷卻，不產生步數，Pro 無冷卻、不需要獎勵廣告。健康紀錄不提供給廣告或訂閱驗證服務。Health Connect 的存取由你授權；本機補記與 Health Connect 中的資料分別保存、分別管理。</p>
+    </div>
+    <p><button class="print-button" type="button" onclick="window.print()">列印／存成 PDF</button></p>
+  </header>
+
+  <aside class="notice" aria-labelledby="publication-title">
+    <h2 id="publication-title">政策網站與 App 版本</h2>
+    <p>本文件依 Android v1.5 的實際功能撰寫，涵蓋 Health Connect、廣告、訂閱與三語介面。先前安裝的 APK 不會因本文件更新而自動升級。專案維護帳號為 <strong>egiwkf@gmail.com</strong>，維護者公開資訊為 egiwkf；聯絡方式及主動寄信的資料處理說明列於第 9 與第 12 節。公開聯絡信箱不代表 App 新增帳號或自動上傳健康資料的功能。</p>
+    <p>本頁提供免登入閱讀的隱私權政策，不代表 App 已在 Google Play 公開上架、訂閱已開放購買，或已通過法律及平台合規審查。實際可用功能、廣告與購買狀態以安裝版本及商店配置為準。</p>
+  </aside>
+
+  <nav aria-label="政策目錄">
+    <h2>閱讀目錄</h2>
+    <ul>
+      <li><a href="#scope">1. 本政策的範圍</a></li>
+      <li><a href="#health">2. Health Connect 權限與用途</a></li>
+      <li><a href="#local">3. 裝置內保存的資料</a></li>
+      <li><a href="#realtime">4. 實時模式與背景執行</a></li>
+      <li><a href="#surfaces">5. 小工具、通知與畫面顯示</a></li>
+      <li><a href="#sharing">6. 分享、廣告、分析與付款</a></li>
+      <li><a href="#retention">7. 保存期限、刪除與備份</a></li>
+      <li><a href="#security">8. 資料保護與診斷資訊</a></li>
+      <li><a href="#choices">9. 你的選擇與資料管理</a></li>
+      <li><a href="#children">10. 未成年人使用</a></li>
+      <li><a href="#updates">11. 政策更新</a></li>
+      <li><a href="#contact">12. 維護者與聯絡資訊</a></li>
+    </ul>
+  </nav>
+
+  <section id="scope" aria-labelledby="scope-title">
+    <h2 id="scope-title">1. 本政策的範圍</h2>
+    <p>本政策說明皮皮豬 Android v1.5 如何在裝置內處理使用者輸入、Health Connect 步數、必要設定與冷卻資訊，廣告、隱私訊息及 Google Play 訂閱服務的資料處理，以及主動聯絡維護者時提供的資料。維護者提供的聯絡帳號與公開資訊列於第 12 節；帳號名稱不代表已確認的公司名稱或法律主體名稱。</p>
+    <p>本政策的套件識別碼為 <code>com.pipipig.app</code>。原套件 <code>com.foreststeps.app</code> 與新套件是兩個獨立 App，使用不同的私有儲存空間與 Health Connect 資料來源。更名不會自動搬移舊版紀錄、設定或權限，也不會自動重寫舊健康紀錄；本文件不代表已安裝的舊 App 已被更新成新套件。</p>
+    <p>本政策不代表 Android、Google、裝置製造商、其他健康 App 或第三方網站的隱私政策。當你自行授權其他 App、使用系統備份，或開啟外部網站時，相關服務的資料處理應以其政策與你的設定為準。</p>
+    <p>本政策網站由 GitHub Pages 託管。瀏覽網頁時，GitHub 會接收提供網站及維護安全所需的網路請求資訊，包括 IP 位址；相關處理請參閱 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub 一般隱私權聲明</a>。本頁不載入第三方分析或廣告程式，App 也不會把健康紀錄傳送到本網站。</p>
+    <p>皮皮豬不是醫療裝置；步數補記、距離與熱量估算不能用來替代醫療診斷、治療或專業建議。</p>
+  </section>
+
+  <section id="health" aria-labelledby="health-title">
+    <h2 id="health-title">2. Health Connect 權限與用途</h2>
+    <p>皮皮豬只要求 Health Connect 的<strong>步數讀取與步數寫入</strong>權限。你可以不授權，或依系統允許的方式只授予其中一種；本機補記仍可使用，需要健康權限的功能則可能無法執行。</p>
+    <h3>讀取步數</h3>
+    <p>取得所選日期或可讀取日期範圍的每日總步數，用於顯示健康總數、與本機補記區分、計算距離每日目標的差額，以及更新桌面小工具快照。總數透過 Health Connect 的彙總介面取得，遵循系統對不同資料來源的處理方式，不把本機補記額外加進健康總數。</p>
+    <p>App 不讀取 Health Connect 中的身高、體重、心率、睡眠、位置軌跡或其他健康資料類型，也不要求背景健康讀取權限。可讀取的歷史範圍仍受系統版本與授權限制。</p>
+    <h3>寫入、修改與刪除</h3>
+    <p>當你確認補記，或主動開始實時模式並授權寫入時，App 會將步數、起訖時間、時區偏移、固定補記識別碼與紀錄版本寫入 Health Connect，記錄方式標示為<strong>手動輸入</strong>；來源 App 由系統標示為皮皮豬。</p>
+    <p>此版本不向 Health Connect 寫入估算距離、熱量、活動類型、跑步速度、身高、體重、每日目標、補記原因或主題配色，也不自行附加裝置型號、製造商或硬體識別碼。</p>
+    <p>修改與刪除只針對皮皮豬建立、且本機仍有對應識別資訊的紀錄，不刪除其他 App 或裝置建立的步數。其他 App 是否讀取、接受或使用手動紀錄，取決於其自身規則及你對它的授權，皮皮豬不保證採計。</p>
+    <p>Health Connect 資料只用於上述使用者可見功能，不會用於廣告投放、使用者輪廓、信用或保險評估，也不會出售或提供給資料仲介。Google 對 Health Connect 的管理方式，可參閱 <a href="https://support.google.com/android/answer/12201227" target="_blank" rel="noopener noreferrer">Health Connect 說明</a>與<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 隱私權政策</a>。</p>
+  </section>
+
+  <section id="local" aria-labelledby="local-title">
+    <h2 id="local-title">3. 裝置內保存的資料</h2>
+    <p>為了讓補記、報表、設定與中斷還原正常運作，皮皮豬在 App 私有儲存空間保存以下資料：</p>
+    <ul>
+      <li><strong>補記紀錄：</strong>步數、起訖時間、時區、活動類型、估算距離與熱量，以及你填寫的補記原因。</li>
+      <li><strong>同步資訊：</strong>每筆補記的隨機識別碼、版本與待寫入／已同步／待刪除狀態，供重試去重及對應修改、刪除使用。</li>
+      <li><strong>活動設定：</strong>選填身高、手動輸入或採用預設值的體重、每日步數目標與跑步估算速度。這些值不是從 Health Connect 讀取的實測值。</li>
+      <li><strong>實時模式：</strong>每分鐘步速、寫入間隔、有效時間、工作識別碼、開始時間、有效執行時間、累計步數、批次編號、執行狀態、中斷提示與當次結束後的冷卻規則。</li>
+      <li><strong>冷卻狀態：</strong>已結束工作的識別碼、冷卻起始日曆時間、單調時鐘時間與開機次數，供重開 App／裝置後還原五分鐘冷卻。跳過時移除本次冷卻，不累積下次獎勵。</li>
+      <li><strong>外觀與小工具設定：</strong>主題選擇、自訂 HEX 色碼、小工具是否顯示皮皮豬。</li>
+      <li><strong>安裝識別碼：</strong>首次初始化資料時隨機產生，保存在本機，用於依裝置安裝與日期選擇鼓勵文案；不是廣告識別碼、電話號碼或硬體序號，不用來跨 App 追蹤。</li>
+      <li><strong>小工具快照：</strong>近 30 日本機補記步數與筆數彙總、最近取得的健康每日步數與更新時間、是否可顯示健康快照，以及顯示所需的文案識別與配色設定。</li>
+    </ul>
+    <p>已讀取的健康總數也可能暫存在 App 執行時的記憶體中。上述資料不會由此版本自動傳送給開發者伺服器、分析平台、廣告服務或第三方 AI。</p>
+    <p>App 不要求建立帳號，不索取姓名、生日、電話號碼或聯絡人清單，也不要求位置、相機、麥克風或照片存取權限。請不要在補記原因中填入與活動補記無關的身分證號、金融資訊或其他敏感內容。</p>
+    <p>v1.5 提供繁體中文、英文及韓文介面，跟隨裝置或系統的 App 語言設定。切換語言不會改寫既有步數、補記原因或個人設定，也不會因此重新寫入 Health Connect；已保存的原因及歷史訊息保留原文。</p>
+  </section>
+
+  <section id="realtime" aria-labelledby="realtime-title">
+    <h2 id="realtime-title">4. 實時模式與背景執行</h2>
+    <p>實時模式依你設定的每分鐘步速、寫入間隔與有效時間，在裝置上以程式計算產生分段補記，並非感測器計步，也不是第三方 AI 服務。請只用於記錄實際發生的活動，不把估算資料視為裝置實測。</p>
+    <p>開始前需要 Health Connect 步數寫入權限。你可以開始、暫停、繼續或結束；暫停時停止有效時間倒數與步數推算，暫停空窗不算入活動時段。暫停、結束或到期時，App 會保存並嘗試寫入剩餘部分間隔。</p>
+    <p>免費模式上限為每分鐘 150 步、間隔至少 60 秒、有效時間最多 5 分鐘；Plus 為 200 步、30 秒、30 分鐘。免費與 Plus 自然到期或提前結束後冷卻五分鐘，暫停不產生新冷卻、不重設有效時間；可免費等待或自願看獎勵廣告跳過。Pro 為 300 步、10 秒、240 分鐘，無冷卻、不需要獎勵廣告，也不受先前剩餘冷卻限制。新工作與繼續會重新確認方案，執行中工作按已開始的設定及冷卻規則完成，不改寫舊紀錄。</p>
+    <p>為支援切換其他 App 或關閉螢幕後繼續執行，App 使用前景同步服務、前景服務通知與限時喚醒鎖。喚醒鎖只在執行期間使用，可能增加耗電，不用於背景讀取其他健康資料。</p>
+    <p>強制停止、重新開機、系統或廠商限制、健康權限撤銷及同步錯誤，可能中斷執行。App 保留最後成功保存的紀錄與檢查點供還原，不自動補記中斷期間未被保存的空窗；持續背景執行不是無條件保證。</p>
+  </section>
+
+  <section id="surfaces" aria-labelledby="surfaces-title">
+    <h2 id="surfaces-title">5. 小工具、通知與畫面顯示</h2>
+    <p>桌面小工具顯示本機補記與最近一次 App 前景讀取的健康快照，並標示健康快照更新時間；小工具不自行在背景讀取 Health Connect，也不保證資料即時更新。沒有今日可用健康快照時，會明確標示本機補記，不把它當成完整健康總步數。</p>
+    <p>實時模式通知可能顯示執行狀態與推算步數，並提供暫停、繼續或結束控制。Android 13 以上會依系統規則請求通知權限；拒絕通知權限時仍可在 App 內控制，系統可能另顯示前景服務執行資訊。</p>
+    <p>小工具、通知及截圖可能讓裝置旁的人看到步數或活動資訊。你可以移除小工具、調整系統通知與鎖定畫面顯示設定，並在分享截圖前檢查其中的內容。鎖定畫面能否加入小工具取決於裝置與系統支援。</p>
+  </section>
+
+  <section id="sharing" aria-labelledby="sharing-title">
+    <h2 id="sharing-title">6. 分享、廣告、分析與付款</h2>
+    <h3>Google AdMob 與 UMP</h3>
+    <p>此接入版加入 Google Mobile Ads Next-Gen SDK 1.6.0 與 User Messaging Platform（UMP）4.0.0，並要求網際網路與網路狀態權限。UMP 會向 Google 請求最新隱私選項資訊並在需要時顯示表單；只有 UMP 的 <code>canRequestAds()</code> 允許廣告請求後，才初始化廣告 SDK。首頁顯示橫幅；除錯 APK 使用官方測試廣告，正式發行版本使用專案廣告單元。測試廣告仍可能聯絡 Google，不等於離線或不處理裝置資訊。</p>
+    <p>依 Google SDK 的資料揭露，廣告服務會收集與分享 IP 位址（可推估大致位置）、應用程式與廣告互動（如啟動、點擊、觀看）、效能與診斷資訊，以及裝置／帳號相關識別碼（如 Android 廣告 ID、App set ID，及適用時其他帳號相關識別碼），用於廣告、分析及防詐。SDK 合併至安裝資訊的權限包括廣告 ID 與基本電話狀態（<code>READ_BASIC_PHONE_STATE</code>）；後者不是聯絡人、通話紀錄或讀取電話號碼的權限。你可使用 Android 的廣告識別碼設定重設或刪除廣告 ID。SDK 的上述傳輸使用 TLS。UMP 另處理隱私選擇、同意狀態及確認適用訊息所需的應用與裝置資訊。這不代表 App 自行讀取你的 Google 帳號資料。</p>
+    <p><strong>App 不將 Health Connect 步數、本機健康紀錄、身高體重、活動設定、補記原因、目標或主題設定傳給廣告 SDK，也不以這些資料設定廣告投放、分析事件或使用者輪廓。</strong>未接入第三方中介平台、Firebase Analytics、開發者健康資料庫、雲端帳號或 AI 服務；但廣告 SDK 自身的分析與診斷收集仍存在，不能宣稱完全沒有分析或網路資料處理。</p>
+    <p>在「設定 → 廣告與隱私」可重新確認隱私狀態；當 UMP 要求選項入口時，可使用「廣告隱私選項」更改選擇。同意訊息依所在地及 AdMob 後台設定而定；沒有表單不代表同意所有個人化用途。拒絕個人化不一定等於完全不顯示廣告，實際依當前 UMP 狀態及 Google 規則處理。隱私設定或廣告失敗不會阻止本機補記、健康權限管理、暫停／結束或紀錄刪除。更改選項時會移除既有橫幅，再依新狀態判斷是否重載。</p>
+    <p>Google 所接收的廣告及隱私訊息資料由 Google 依其用途、政策與適用要求保存，App 無法替 Google 承諾固定刪除期限。詳見 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 隱私權政策</a>與 <a href="https://developers.google.com/admob/android/next-gen/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">廣告 SDK 資料揭露</a>。</p>
+    <h3>自願獎勵廣告</h3>
+    <p>只有存在剩餘冷卻、你主動選擇觀看且 UMP 允許時，才載入獎勵廣告。僅 Google SDK 的取得獎勵回呼會跳過當次剩餘冷卻；點擊、關閉、未看完或載入失敗不發獎，不產生步數，也不能累積給下次工作。冷卻識別碼只在本機比對，不放入廣告請求或服務端驗證參數。沒有廣告、未同意或不想觀看時可等冷卻結束；刪除紀錄永遠免費、不綁廣告。</p>
+    <h3>Google Play 月訂閱</h3>
+    <p>已加入 Google Play Billing 9.1.0，Plus／Pro 為每月自動續訂的數位功能方案。Plus 移除一般廣告，獎勵廣告自願；Pro 移除一般廣告且無冷卻、不需要獎勵廣告。價格與可購買狀態以 Play 回傳的當地方案為準；未配置購買驗證公鑰或商品時禁止購買，不代表已正式上線收費。付款由 Google Play 處理，皮皮豬不取得信用卡或完整付款資料。未加入 PayPal、一次性打賞或支持包。</p>
+    <p>App 透過 Google Play 查詢商品 ID、當地價格、購買 token、購買狀態、簽章與確認狀態，在記憶體驗證簽章及套件／商品／付款狀態後確認購買，用於授予、恢復及重新檢查權益。待付款不授予權益；未寫入本機健康 JSON、廣告參數或健康紀錄，也不傳健康資料給付款服務。沒有開發者購買驗證後端、Developer API 或 RTDN；目前使用客戶端驗證及即時 Play 查詢，不能宣稱具有伺服器防竄改或即時退款推播能力。</p>
+    <p>可在「設定 → 月訂閱」恢復購買及開啟 Google Play 管理／取消。訂閱每月自動續訂並收費直到取消，取消但未到期的有效購買仍以 Play 查詢結果保留權益；到期、撤銷或無法確認時顯示原因並套用免費限制，不刪除使用者資料。執行中的工作按原設定完成，暫停後繼續與新工作重新查詢；前景每五分鐘重新檢查有效訂閱。Google Play 依自身政策保存交易、帳號及必要診斷資訊；App 不控制或保證 Google 的保存期限。詳見 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 隱私權政策</a>。</p>
+    <p>當你授權 App 寫入 Health Connect，紀錄會由 Health Connect 保存；如果你另外授權其他 App 讀取相關資料，該 App 的使用方式由它的政策及你的授權決定，不能視為皮皮豬已控制或阻止其後續處理。</p>
+    <p>若未來新增其他廣告服務、購買、分析或雲端功能，需先重新說明實際資料類型、服務提供者、用途、保存與選擇方式，更新本政策及商店資料揭露，並在適用時取得必要同意。<strong>本政策不授權把目前保存的健康資料改作廣告、出售或其他未告知用途。</strong></p>
+  </section>
+
+  <section id="retention" aria-labelledby="retention-title">
+    <h2 id="retention-title">7. 保存期限、刪除與備份</h2>
+    <h3>本機與 Health Connect 是兩份不同的資料</h3>
+    <p>本機補記與設定一般保存至你刪除對應紀錄、清除 App 儲存空間或卸載 App；目前沒有自動在固定天數後清除全部歷史紀錄的功能。Health Connect 中已寫入的資料由系統另外保存，不會因刪除 App 就自動移除。</p>
+    <h3>在 App 刪除紀錄</h3>
+    <p>刪除補記會先保存待刪除狀態並在有權限時嘗試同步。若缺少權限、Health Connect 暫不可用或同步未完成，原紀錄與必要識別資訊可能仍存在本機，供之後完成對應刪除；從畫面隱藏不等於已從 Health Connect 刪除。同步成功後，App 會移除本機對應紀錄。此版本的 Health Connect 同步是裝置內操作，不是雲端上傳。</p>
+    <p>實時模式仍未結束時，該次工作產生的紀錄不可在紀錄頁修改或刪除；請先結束實時模式。對跨日活動刪除整筆紀錄時，相關日期會一起受到影響。</p>
+    <h3>移除全部資料時</h3>
+    <ol>
+      <li>若實時模式正在執行，先結束。</li>
+      <li>在 App 刪除要移除的補記，並完成 Health Connect 同步；或直接在 Health Connect 管理皮皮豬來源的資料。</li>
+      <li>確認健康資料的刪除結果後，再按需要清除 App 儲存空間或卸載 App，以移除本機紀錄、快照與設定。</li>
+    </ol>
+    <p><strong>撤銷權限不是資料刪除操作。</strong>清除本機資料或卸載後，App 可能失去與舊健康紀錄對應的識別資訊；重新安裝不代表一定能在 App 內修改或刪除那些舊紀錄，仍可使用 Health Connect 的資料管理功能。</p>
+    <p>目前設定停用 Android 自動備份，並在支援的系統規則中排除 App 資料的雲端備份與裝置搬移。這不等於對 Health Connect、裝置製造商、使用者手動備份或其他系統資料處理作保證；其行為仍由相關系統與設定決定。</p>
+  </section>
+
+  <section id="security" aria-labelledby="security-title">
+    <h2 id="security-title">8. 資料保護與診斷資訊</h2>
+    <p>App 使用 Android 的私有儲存空間及系統權限機制限制一般 App 對資料的存取。寫入本機檔案時採用原子寫入方式，降低中斷造成不完整檔案的風險；這不代表額外的 App 層加密，也不是不會遺失資料或不會遭未授權存取的保證。</p>
+    <p>裝置解鎖、root、USB 偵錯、系統弱點、備份工具或他人取得裝置控制權，可能影響資料保護。請妥善管理裝置鎖定、系統更新與偵錯權限，不分享含敏感內容的截圖或本機檔案。</p>
+    <p>處理失敗時，App 可能將錯誤與例外資訊寫入 Android 系統診斷日誌。App 不自行上傳健康操作日誌；廣告 SDK 另有第 6 節說明的效能與診斷收集，不能視為完全沒有自動診斷傳輸。不宜把系統日誌視為匿名資料。若你主動提供日誌、截圖或其他檔案協助排錯，請先確認並移除不必要的健康、身分或聯絡資訊。</p>
+  </section>
+
+  <section id="choices" aria-labelledby="choices-title">
+    <h2 id="choices-title">9. 你的選擇與資料管理</h2>
+    <ul>
+      <li>在 Health Connect 管理皮皮豬的步數讀寫權限，或撤銷授權。</li>
+      <li>在 App 查看、修改與刪除皮皮豬的本機補記；需要更動健康紀錄時，完成對應同步。</li>
+      <li>自行調整身高、體重、活動速度、每日目標、外觀與小工具設定。</li>
+      <li>控制實時模式、系統通知與小工具顯示。</li>
+      <li>在「設定 → 廣告與隱私」使用 UMP 所要求的隱私選項入口；可另透過 Android 設定管理廣告識別碼。拒絕或無法載入廣告，不影響紀錄刪除。</li>
+      <li>透過 Android 設定清除 App 的本機儲存資料或卸載 App；Health Connect 的資料需另外管理。</li>
+    </ul>
+    <p>此版本沒有帳號後端、開發者遠端資料查詢或一鍵匯出全部紀錄的功能。開發者不會自動收到你的健康資料，因此無法直接替你遠端刪除裝置或 Health Connect 中的紀錄；請使用上述本機與系統管理方式。</p>
+    <p>你可以透過第 12 節公布的信箱提出隱私或使用問題。寄信是你的主動選擇，不是使用本機補記或刪除資料的條件。請只提供處理問題所需的資訊，並先移除截圖、日誌或附件中不必要的健康及身分資料；私人 GitHub 儲存庫不是公開客服表單。</p>
+    <p>當你主動寄信時，維護者會收到你的寄件地址、訊息內容與附件，並在回覆、排錯或處理該項請求所需的範圍內使用；不將這些資料用於廣告投放。信件也會經由寄件與收件的郵件服務處理，相關服務另有其隱私政策。聯絡資料僅於處理請求、必要後續追蹤或適用法律要求的期間保存；你可來信提出刪除所提供聯絡資料的請求。這與裝置內及 Health Connect 紀錄的刪除是不同的操作，維護者不能透過信箱遠端存取或刪除你的裝置資料。</p>
+  </section>
+
+  <section id="children" aria-labelledby="children-title">
+    <h2 id="children-title">10. 未成年人使用</h2>
+    <p>可愛角色與蠟筆畫風不代表 App 已被認定為兒童專用服務。此版本不要求提供生日或年齡，也不以兒童身分建立帳號或投放廣告；正式發布的適用年齡與目標受眾，需依商店設定及所在地要求確認。</p>
+    <p>未成年人使用健康資料相關功能時，請依所在地法律，在必要時由法定代理人協助理解權限、補記的性質與資料刪除方式。裝置與 Health Connect 中的資料，可由有權限的使用者或監護人透過系統管理；必要時由法定代理人透過第 12 節的信箱聯絡維護者，避免寄送不必要的兒童健康或身分資料。此版本不提供兒童專用帳號服務。</p>
+  </section>
+
+  <section id="updates" aria-labelledby="updates-title">
+    <h2 id="updates-title">11. 政策更新</h2>
+    <p>若 App 版本、權限、資料用途、第三方服務或保存方式改變，政策內容應依實際功能更新，並標示新日期與適用版本。對需要額外告知或同意的變更，應在新用途開始前依適用法律與平台要求提供說明，不能僅以更新頁面取代必要同意。</p>
+    <p>本文件最後更新日期為 2026 年 11 月 4 日，適用 Android v1.5 的本機資料處理、AdMob／UMP、Google Play Billing、語言切換及主動寄信聯絡，不涵蓋尚未實作的雲端健康或購買驗證服務。先前安裝的 APK 仍依其原有行為執行。公開提供本政策不代表 App 已上架，也不代表本文件已通過法律或平台合規審查。</p>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">12. 維護者與聯絡資訊</h2>
+    <p>專案維護帳號：<strong><a href="mailto:egiwkf@gmail.com">egiwkf@gmail.com</a></strong></p>
+    <p>維護者公開資訊：egiwkf</p>
+    <p>隱私、使用或資料管理問題可寄至上述信箱；主動寄信所提供資料的處理方式請參閱第 9 節。App 不會自動寄送健康紀錄、日誌或個人設定，也不要求你先寄信才能使用資料管理功能。</p>
+    <p>裝置內及 Health Connect 的資料查看、更正、權限撤銷及刪除方式請參閱第 7 與第 9 節。請不要提供密碼、驗證碼、付款資訊或與問題無關的敏感內容。</p>
+  </section>
+
+  <footer>皮皮豬 Pipi Pig · Android v1.5 隱私權政策<br>本 HTML 頁面使用系統字型，不載入外部圖片、追蹤程式或第三方分析服務；GitHub Pages 網站託管說明見第 1 節，App 的廣告與訂閱資料處理見第 6 節。</footer>
+</main>
+</body>
+</html>
